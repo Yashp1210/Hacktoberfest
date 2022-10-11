@@ -3,6 +3,7 @@ class Solution {
     if (root == null) {
       return true;
     }
+    
     Map<TreeNode, Integer> map = new HashMap<>();
     int leftHeight = getHeight(root.left, map);
     int rightHeight = getHeight(root.right, map);
